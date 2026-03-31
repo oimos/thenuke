@@ -1,0 +1,63 @@
+The Nuke — Instant Emergency Privacy Protection for Your Browser
+
+Accidentally left personal tabs open before a screen share? Boss walking over while you're browsing Reddit? The Nuke closes targeted tabs, wipes their history, and camouflages your screen — all in under 200ms.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚡ KEY FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 One-Key Emergency Activation
+Press Alt+Shift+X (customizable) to instantly trigger cleanup. No menus, no clicks, no delay.
+
+🎯 Smart Domain Watchlist
+Define which domains to monitor — social media, video streaming, news sites, and more. Built-in presets for quick setup.
+
+🧹 Complete Trace Removal
+Matching tabs are closed AND their history entries are deleted. Optional time-based history wipe (last 5, 15, 30, or 60 minutes).
+
+🎭 Instant Camouflage
+Choose between two cover modes:
+  • Safe Redirect — Navigate your active tab to a professional site (LinkedIn, Google Docs, etc.)
+  • Dashboard Overlay — Display a realistic Excel-style financial spreadsheet over your current page
+
+📊 Professional Fake Dashboard
+The overlay looks like an actual Excel workbook — complete with ribbon toolbar, formula bar, cell grid with financial data, sheet tabs, and status bar. Dismiss it anytime with ESC.
+
+⚙️ Full Control
+  • Manage your domain watchlist with add/remove and preset categories
+  • Toggle between redirect and overlay camouflage modes
+  • Set how much history to clear (panic level slider)
+  • Test scan to preview which tabs would be affected — without closing anything
+  • Enable/disable with a single toggle
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🛡️ PRIVACY & SECURITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• All data stays local — your watchlist is stored in Chrome sync storage and never sent to external servers
+• No analytics, no tracking, no data collection
+• Open source — inspect every line of code
+• Minimal permissions — only requests what's needed for core functionality
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 USE CASES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Screen sharing in meetings — instantly clean up before presenting
+• Open office environments — quick privacy when someone approaches
+• Shared computers — clear personal browsing traces in one keystroke
+• Focus mode — remove distracting tabs and stay on task
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 GETTING STARTED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Install The Nuke
+2. Click the extension icon → Settings (gear icon)
+3. Add domains to your watchlist (or use presets)
+4. Choose your camouflage mode
+5. Press Alt+Shift+X when you need it
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The Nuke is free, fast, and respects your privacy.

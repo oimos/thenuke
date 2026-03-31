@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Screenshot - Options</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1280px; height: 800px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+  .card {
+    width: 720px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.4);
+    overflow: hidden;
+    padding: 32px;
+  }
+  h1 { font-size: 20px; color: #1e293b; margin-bottom: 4px; }
+  .subtitle { font-size: 13px; color: #94a3b8; margin-bottom: 24px; }
+  .section {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .section-title { font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 4px; }
+  .section-desc { font-size: 11px; color: #94a3b8; margin-bottom: 12px; }
+  .domain-list { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .domain-tag {
+    background: #f1f5f9;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 11px;
+    color: #475569;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .domain-tag .x { color: #94a3b8; cursor: pointer; }
+  .presets { display: flex; gap: 6px; margin-top: 8px; }
+  .preset-btn {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 4px 12px;
+    font-size: 11px;
+    color: #475569;
+    background: #fff;
+  }
+  .mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .mode-card {
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px;
+  }
+  .mode-card.active { border-color: #3b82f6; background: #eff6ff; }
+  .mode-icon { font-size: 20px; margin-bottom: 4px; }
+  .mode-label { font-size: 12px; font-weight: 500; color: #334155; }
+  .mode-desc { font-size: 10px; color: #94a3b8; margin-top: 2px; }
+  .panic-levels { display: flex; flex-direction: column; gap: 6px; }
+  .panic-row {
+    display: flex; align-items: center; gap: 10px;
+    padding: 6px 10px; border-radius: 6px; font-size: 12px; color: #475569;
+  }
+  .panic-row.active { background: #eff6ff; outline: 1px solid #bfdbfe; }
+  .panic-radio {
+    width: 14px; height: 14px; border-radius: 50%;
+    border: 2px solid #cbd5e1; display: inline-block;
+  }
+  .panic-row.active .panic-radio { border-color: #3b82f6; background: #3b82f6; box-shadow: inset 0 0 0 2px #fff; }
+  .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+  .toggle-area { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #475569; }
+  .toggle {
+    width: 36px; height: 20px; border-radius: 10px; background: #3b82f6;
+    position: relative; display: inline-block;
+  }
+  .toggle::after {
+    content: ''; position: absolute; top: 2px; left: 18px;
+    width: 16px; height: 16px; border-radius: 50%; background: #fff;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="header-row">
+      <div>
+        <h1>The Nuke Settings</h1>
+        <div class="subtitle">Configure your emergency privacy preferences</div>
+      </div>
+      <div class="toggle-area">
+        Active <span class="toggle"></span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Domain Watchlist</div>
+      <div class="section-desc">Tabs matching these domains will be closed during cleanup</div>
+      <div class="domain-list">
+        <div class="domain-tag">twitter.com <span class="x">✕</span></div>
+        <div class="domain-tag">x.com <span class="x">✕</span></div>
+        <div class="domain-tag">reddit.com <span class="x">✕</span></div>
+        <div class="domain-tag">youtube.com <span class="x">✕</span></div>
+        <div class="domain-tag">facebook.com <span class="x">✕</span></div>
+        <div class="domain-tag">instagram.com <span class="x">✕</span></div>
+        <div class="domain-tag">tiktok.com <span class="x">✕</span></div>
+        <div class="domain-tag">twitch.tv <span class="x">✕</span></div>
+        <div class="domain-tag">netflix.com <span class="x">✕</span></div>
+      </div>
+      <div class="presets">
+        <div class="preset-btn">+ Social Media (9)</div>
+        <div class="preset-btn">+ Video (7)</div>
+        <div class="preset-btn">+ News (4)</div>
+        <div class="preset-btn">+ Gaming (4)</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Camouflage Mode</div>
+      <div class="section-desc">What happens after cleanup completes</div>
+      <div class="mode-grid">
+        <div class="mode-card">
+          <div class="mode-icon">🔗</div>
+          <div class="mode-label">Safe Redirect</div>
+          <div class="mode-desc">Navigate to a safe URL</div>
+        </div>
+        <div class="mode-card active">
+          <div class="mode-icon">📊</div>
+          <div class="mode-label">Dashboard Overlay</div>
+          <div class="mode-desc">Show fake Excel spreadsheet</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">History Cleanup</div>
+      <div class="section-desc">How much browsing history to clear</div>
+      <div class="panic-levels">
+        <div class="panic-row"><span class="panic-radio"></span> Closed URLs only</div>
+        <div class="panic-row"><span class="panic-radio"></span> Last 5 minutes</div>
+        <div class="panic-row active"><span class="panic-radio"></span> Last 15 minutes</div>
+        <div class="panic-row"><span class="panic-radio"></span> Last 30 minutes</div>
+        <div class="panic-row"><span class="panic-radio"></span> Last hour</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
