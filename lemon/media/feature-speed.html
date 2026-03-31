@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Feature - Speed</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 900px;
+    background: linear-gradient(145deg, #0c0a1a 0%, #1a0e2e 40%, #0f172a 100%);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow: hidden; gap: 48px;
+  }
+  .top { text-align: center; }
+  .label {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+    color: #ef4444; text-transform: uppercase; margin-bottom: 12px;
+  }
+  h2 { font-size: 40px; font-weight: 800; color: #fff; margin-bottom: 12px; }
+  .desc { font-size: 17px; color: #94a3b8; max-width: 500px; margin: 0 auto; line-height: 1.5; }
+  .speed-display {
+    display: flex; align-items: baseline; gap: 8px;
+  }
+  .speed-num {
+    font-size: 140px; font-weight: 900; color: #ef4444;
+    line-height: 1;
+    text-shadow: 0 0 80px rgba(239,68,68,0.3);
+  }
+  .speed-unit { font-size: 40px; color: #f87171; font-weight: 600; }
+  .steps {
+    display: flex; gap: 40px;
+  }
+  .step {
+    text-align: center; width: 200px;
+  }
+  .step-icon {
+    width: 56px; height: 56px;
+    background: rgba(239,68,68,0.1);
+    border: 1px solid rgba(239,68,68,0.2);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; margin: 0 auto 12px;
+  }
+  .step-label { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+  .step-desc { font-size: 12px; color: #64748b; line-height: 1.4; }
+  .arrow { color: #334155; font-size: 28px; align-self: center; margin-top: -20px; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="label">Performance</div>
+    <h2>Blink and It's Done</h2>
+    <div class="desc">Parallel API execution ensures everything happens simultaneously — not sequentially.</div>
+  </div>
+  <div class="speed-display">
+    <span class="speed-num">&lt;200</span>
+    <span class="speed-unit">ms</span>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-icon">🔍</div>
+      <div class="step-label">Identify</div>
+      <div class="step-desc">Scan all tabs against your watchlist</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="step-icon">🗑️</div>
+      <div class="step-label">Close & Wipe</div>
+      <div class="step-desc">Remove tabs + delete history in parallel</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="step">
+      <div class="step-icon">🎭</div>
+      <div class="step-label">Camouflage</div>
+      <div class="step-desc">Redirect or overlay fake dashboard</div>
+    </div>
+  </div>
+</body>
+</html>

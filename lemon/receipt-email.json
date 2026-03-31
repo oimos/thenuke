@@ -1,0 +1,5 @@
+{
+  "message": "Thanks for getting The Nuke! Here's how to install:\n\n1. Download the ZIP from the button below\n2. Unzip the file\n3. Open chrome://extensions in Chrome\n4. Enable Developer Mode (top right)\n5. Click 'Load unpacked' and select the unzipped folder\n6. Press Alt+Shift+X to test!\n\nNeed help? Open an issue at https://github.com/oimos/thenuke/issues",
+  "button_text": "Download Extension",
+  "button_link": "https://github.com/oimos/thenuke/releases/latest"
+}

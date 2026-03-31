@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Feature - Popup</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 900px;
+    background: linear-gradient(145deg, #0c0a1a 0%, #1a0e2e 40%, #0f172a 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow: hidden; gap: 60px;
+  }
+  .text-side { max-width: 420px; }
+  .label {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+    color: #ef4444; text-transform: uppercase; margin-bottom: 12px;
+  }
+  h2 { font-size: 36px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 16px; }
+  .desc { font-size: 16px; color: #94a3b8; line-height: 1.6; margin-bottom: 24px; }
+  .bullets { display: flex; flex-direction: column; gap: 10px; }
+  .bullet {
+    display: flex; align-items: center; gap: 10px;
+    color: #cbd5e1; font-size: 14px;
+  }
+  .bullet .check { color: #22c55e; font-weight: 700; }
+  .popup-mock {
+    width: 320px; background: #fff; border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4); overflow: hidden;
+  }
+  .ph {
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    padding: 14px 18px; color: #fff;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .ph h3 { font-size: 15px; font-weight: 600; }
+  .ph small { font-size: 10px; opacity: 0.7; }
+  .pb { padding: 14px 18px; }
+  .sr { display: flex; justify-content: space-between; padding: 7px 0; font-size: 12px; color: #475569; border-bottom: 1px solid #f1f5f9; }
+  .sv { font-weight: 600; }
+  .sv.b { color: #2563eb; }
+  .sv.a { color: #d97706; }
+  .fl { margin-top: 10px; }
+  .fl-t { font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: #94a3b8; margin-bottom: 6px; font-weight: 500; }
+  .fi { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #475569; padding: 5px 8px; background: #fffbeb; border-radius: 4px; margin-bottom: 3px; }
+  .fd { color: #f59e0b; font-size: 8px; }
+  .btn {
+    display: block; width: calc(100% - 36px); margin: 14px 18px;
+    padding: 10px; background: #f8fafc; border: 1px solid #e2e8f0;
+    border-radius: 6px; font-size: 12px; font-weight: 500;
+    color: #475569; text-align: center;
+  }
+  .pf { padding: 8px 18px; border-top: 1px solid #f1f5f9; text-align: center; font-size: 10px; color: #cbd5e1; }
+</style>
+</head>
+<body>
+  <div class="text-side">
+    <div class="label">Stealth Popup</div>
+    <h2>Hidden Panic Button</h2>
+    <div class="desc">The popup looks like a harmless workspace tool. Hold the button for 1.5 seconds to activate The Nuke — or just press Alt+Shift+X.</div>
+    <div class="bullets">
+      <div class="bullet"><span class="check">✓</span> Real-time flagged tab count</div>
+      <div class="bullet"><span class="check">✓</span> Domain monitoring status</div>
+      <div class="bullet"><span class="check">✓</span> Hold-to-activate safety</div>
+      <div class="bullet"><span class="check">✓</span> One-click settings access</div>
+    </div>
+  </div>
+  <div class="popup-mock">
+    <div class="ph"><div><h3>☢️ The Nuke</h3><small>v1.0.0</small></div><div style="opacity:0.7">⚙</div></div>
+    <div class="pb">
+      <div class="sr"><span>Monitoring</span><span class="sv b">12 domains</span></div>
+      <div class="sr"><span>Flagged tabs</span><span class="sv a">3 ⚠</span></div>
+      <div class="sr"><span>Mode</span><span class="sv">Dashboard Overlay</span></div>
+      <div class="sr" style="border:none"><span>Shortcut</span><span style="font-family:monospace;font-size:10px;background:#f1f5f9;padding:2px 6px;border-radius:3px;border:1px solid #e2e8f0">Alt+Shift+X</span></div>
+      <div class="fl">
+        <div class="fl-t">Flagged Tabs</div>
+        <div class="fi"><span class="fd">●</span> twitter.com</div>
+        <div class="fi"><span class="fd">●</span> reddit.com</div>
+        <div class="fi"><span class="fd">●</span> youtube.com</div>
+      </div>
+    </div>
+    <div class="btn">🧹 Clean Workspace</div>
+    <div class="pf">The Nuke</div>
+  </div>
+</body>
+</html>

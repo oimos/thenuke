@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Feature - Fake Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 900px;
+    background: linear-gradient(145deg, #0c0a1a 0%, #1a0e2e 40%, #0f172a 100%);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow: hidden; gap: 24px;
+  }
+  .top-text { text-align: center; position: relative; z-index: 1; }
+  .label {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+    color: #ef4444; text-transform: uppercase; margin-bottom: 8px;
+  }
+  h2 { font-size: 32px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .desc { font-size: 15px; color: #94a3b8; }
+  .window {
+    width: 960px; height: 560px;
+    background: #fff; border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    overflow: hidden; display: flex; flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+  }
+  .tb { height: 28px; background: #217346; color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 10px; font-size: 11px; }
+  .rb { background: #f3f3f3; border-bottom: 1px solid #d6d6d6; }
+  .rt { display: flex; padding: 3px 8px 0; border-bottom: 1px solid #d6d6d6; }
+  .rtb { padding: 5px 12px; font-size: 11px; color: #444; }
+  .rtb.act { background: #fff; border-bottom: 2px solid #217346; color: #217346; font-weight: 600; }
+  .rbar { display: flex; gap: 8px; padding: 5px 10px; background: #fff; align-items: center; }
+  .tg { font-size: 10px; color: #555; }
+  .fb { display: flex; height: 22px; border-bottom: 1px solid #d6d6d6; align-items: center; font-size: 11px; }
+  .fb-r { width: 60px; text-align: center; background: #f8f8f8; border-right: 1px solid #d6d6d6; height: 100%; display: flex; align-items: center; justify-content: center; }
+  .fb-f { padding: 0 6px; color: #888; border-right: 1px solid #d6d6d6; height: 100%; display: flex; align-items: center; }
+  .fb-i { padding: 0 6px; }
+  .sa { flex: 1; overflow: hidden; }
+  table { border-collapse: collapse; width: 100%; font-size: 10px; }
+  .ch th { background: #f0f0f0; border: 1px solid #d4d4d4; padding: 2px 5px; font-weight: 500; color: #555; text-align: center; }
+  .dh th { background: #4472c4; color: #fff; padding: 6px 8px; font-weight: 600; border: 1px solid #3563b5; text-align: left; }
+  td { border: 1px solid #e0e0e0; padding: 4px 7px; }
+  .nm { text-align: right; font-variant-numeric: tabular-nums; }
+  .rn { background: #f0f0f0; color: #555; text-align: center; width: 32px; }
+  .ps { color: #217346; }
+  .ev td { background: #fff; } .od td { background: #f8fafc; }
+  .tot td { background: #e8eef7; border-top: 2px solid #4472c4; font-weight: 600; }
+  .st { display: flex; height: 22px; border-top: 1px solid #d6d6d6; background: #f0f0f0; padding: 0 8px; align-items: center; gap: 2px; }
+  .stb { padding: 3px 12px; font-size: 9px; color: #555; }
+  .stb.act { background: #fff; border: 1px solid #d6d6d6; border-bottom: none; color: #217346; font-weight: 600; }
+  .sb { display: flex; justify-content: space-between; height: 20px; padding: 0 10px; background: #217346; color: #fff; font-size: 9px; align-items: center; }
+  .esc-hint {
+    position: absolute; bottom: 24px; right: 60px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 6px; padding: 6px 14px;
+    color: #94a3b8; font-size: 12px;
+  }
+  .esc-hint kbd { background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+</style>
+</head>
+<body>
+  <div class="top-text">
+    <div class="label">Camouflage Mode</div>
+    <h2>Pixel-Perfect Fake Dashboard</h2>
+    <div class="desc">A full-screen Excel spreadsheet overlay that looks 100% authentic</div>
+  </div>
+  <div class="window">
+    <div class="tb"><span>📊 Q4_Financial_Summary_2025_CONFIDENTIAL.xlsx - Excel</span><span>— ☐ ✕</span></div>
+    <div class="rb">
+      <div class="rt"><span class="rtb">File</span><span class="rtb act">Home</span><span class="rtb">Insert</span><span class="rtb">Page Layout</span><span class="rtb">Formulas</span><span class="rtb">Data</span><span class="rtb">Review</span><span class="rtb">View</span></div>
+      <div class="rbar"><span class="tg"><b>B</b> <i>I</i> <u>U</u></span> <span class="tg">| Calibri 11 |</span> <span class="tg">$ % ,</span></div>
+    </div>
+    <div class="fb"><div class="fb-r">D4</div><div class="fb-f">fx</div><div class="fb-i">$487,230</div></div>
+    <div class="sa">
+      <table>
+        <thead>
+          <tr class="ch"><th style="width:32px"></th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th></tr>
+          <tr class="dh"><th></th><th>Date</th><th>Department</th><th>Revenue</th><th>Expenses</th><th>Net Income</th><th>Margin</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr class="ev"><td class="rn">1</td><td>2025-10-01</td><td>Engineering</td><td class="nm">$487,230</td><td class="nm">$312,450</td><td class="nm ps">$174,780</td><td class="nm">35.9%</td><td style="text-align:center">On Track</td></tr>
+          <tr class="od"><td class="rn">2</td><td>2025-10-08</td><td>Marketing</td><td class="nm">$234,100</td><td class="nm">$198,670</td><td class="nm ps">$35,430</td><td class="nm">15.1%</td><td style="text-align:center">Review</td></tr>
+          <tr class="ev"><td class="rn">3</td><td>2025-10-15</td><td>Sales</td><td class="nm">$892,340</td><td class="nm">$523,120</td><td class="nm ps">$369,220</td><td class="nm">41.4%</td><td style="text-align:center">On Track</td></tr>
+          <tr class="od"><td class="rn">4</td><td>2025-10-22</td><td>Operations</td><td class="nm">$156,780</td><td class="nm">$143,200</td><td class="nm ps">$13,580</td><td class="nm">8.7%</td><td style="text-align:center">At Risk</td></tr>
+          <tr class="ev"><td class="rn">5</td><td>2025-11-01</td><td>Finance</td><td class="nm">$321,560</td><td class="nm">$187,430</td><td class="nm ps">$134,130</td><td class="nm">41.7%</td><td style="text-align:center">On Track</td></tr>
+          <tr class="od"><td class="rn">6</td><td>2025-11-08</td><td>Human Resources</td><td class="nm">$178,900</td><td class="nm">$145,600</td><td class="nm ps">$33,300</td><td class="nm">18.6%</td><td style="text-align:center">Review</td></tr>
+          <tr class="ev"><td class="rn">7</td><td>2025-11-15</td><td>Product</td><td class="nm">$543,210</td><td class="nm">$298,450</td><td class="nm ps">$244,760</td><td class="nm">45.1%</td><td style="text-align:center">On Track</td></tr>
+          <tr class="tot"><td class="rn"></td><td><b>TOTAL</b></td><td></td><td class="nm"><b>$2,814,120</b></td><td class="nm"><b>$1,808,920</b></td><td class="nm ps"><b>$1,005,200</b></td><td class="nm"><b>35.7%</b></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="st"><span class="stb act">Summary</span><span class="stb">Q4 Detail</span><span class="stb">Projections</span><span class="stb">YoY Comparison</span></div>
+    <div class="sb"><span>Ready</span><span>Average: $143,600 | Count: 7 | Sum: $2,814,120</span></div>
+  </div>
+  <div class="esc-hint">Press <kbd>ESC</kbd> to dismiss</div>
+</body>
+</html>

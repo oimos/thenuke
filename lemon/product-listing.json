@@ -1,0 +1,66 @@
+{
+  "product": {
+    "name": "The Nuke — Emergency Privacy for Chrome",
+    "description": "Close targeted tabs, wipe history, and camouflage your screen in under 200ms. One hotkey. Zero traces.",
+    "pricing": {
+      "model": "single_payment",
+      "suggested_prices": [
+        { "tier": "Free", "price": 0, "note": "Free tier as lead magnet or pay-what-you-want" },
+        { "tier": "Standard", "price": 4.99, "currency": "USD" },
+        { "tier": "Pay What You Want", "min_price": 1.00, "suggested_price": 5.00, "currency": "USD" }
+      ],
+      "tax_category": "saas"
+    },
+    "variants": [
+      {
+        "name": "Personal License",
+        "description": "Single-user license for personal use",
+        "price": 4.99,
+        "license_keys": true,
+        "license_activation_limit": 3
+      },
+      {
+        "name": "Team License",
+        "description": "Up to 10 users in one organization",
+        "price": 19.99,
+        "license_keys": true,
+        "license_activation_limit": 10
+      }
+    ],
+    "settings": {
+      "generate_license_keys": true,
+      "display_on_storefront": true
+    }
+  },
+  "store_settings": {
+    "store_name": "The Nuke",
+    "suggested_subdomain": "thenuke"
+  },
+  "links": [
+    {
+      "label": "GitHub Repository",
+      "url": "https://github.com/oimos/thenuke"
+    },
+    {
+      "label": "Support & Issues",
+      "url": "https://github.com/oimos/thenuke/issues"
+    },
+    {
+      "label": "Installation Guide",
+      "url": "https://github.com/oimos/thenuke#setup"
+    }
+  ],
+  "media": {
+    "note": "Upload up to 10 images in 4:3 aspect ratio. Use the HTML templates in lemon/media/ to generate screenshots.",
+    "recommended_images": [
+      "lemon/media/hero.html         → Product hero (1200x900)",
+      "lemon/media/feature-popup.html → Popup UI showcase (1200x900)",
+      "lemon/media/feature-options.html → Settings page (1200x900)",
+      "lemon/media/feature-fakeui.html  → Fake Dashboard demo (1200x900)",
+      "lemon/media/feature-speed.html   → Performance highlight (1200x900)"
+    ]
+  },
+  "files": {
+    "note": "Run 'npm run build && cd dist && zip -r ../lemon/the-nuke-chrome-extension.zip .' to generate the deliverable"
+  }
+}
