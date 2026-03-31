@@ -80,7 +80,7 @@ export function Popup() {
             <span className="text-lg">📊</span>
             <div>
               <h1 className="text-sm font-semibold leading-tight">
-                Workspace Manager
+                The Nuke
               </h1>
               <p className="text-[10px] opacity-75">v1.0.0</p>
             </div>
@@ -201,7 +201,7 @@ export function Popup() {
       {/* Footer */}
       <div className="border-t border-gray-100 px-4 py-2">
         <p className="text-center text-[10px] text-gray-300">
-          Quick Workspace Manager
+          The Nuke
         </p>
       </div>
     </div>

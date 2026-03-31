@@ -83,7 +83,7 @@ export function Options() {
       <div className="mb-8 flex items-center justify-between">
         <div>
           <h1 className="text-xl font-semibold text-gray-800">
-            Workspace Settings
+            The Nuke Settings
           </h1>
           <p className="mt-1 text-sm text-gray-500">
             Configure your workspace cleanup preferences
@@ -344,7 +344,7 @@ export function Options() {
 
       {/* Footer */}
       <div className="mt-8 text-center text-xs text-gray-300">
-        Quick Workspace Manager v1.0.0 &middot; Alt+Shift+X to activate
+        The Nuke v1.0.0 &middot; Alt+Shift+X to activate
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-# Quick Workspace Manager (The Nuke)
+# The Nuke
 
 Emergency privacy Chrome extension that closes specific tabs, wipes history, and applies camouflage instantly.
 
@@ -25,7 +25,7 @@ npm run build
 
 ### Configuration
 
-Click the extension icon → gear icon → or go to `chrome://extensions` → Quick Workspace Manager → Options.
+Click the extension icon → gear icon → or go to `chrome://extensions` → The Nuke → Options.
 
 - **Domain Watchlist**: Add domains to monitor (e.g. `twitter.com`, `reddit.com`). Use presets for quick setup.
 - **Camouflage Mode**: Choose between Safe URL redirect or Fake Dashboard overlay.
